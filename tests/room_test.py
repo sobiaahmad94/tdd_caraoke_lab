@@ -7,10 +7,10 @@ from src.guest import *
 class TestRoom(unittest.TestCase):
     def setUp(self):
         self.room = Room("Room A", 100)
-        self.song = Song("Colors by Halsey", 4.09)
-        self.song_1 = Song("Colors by Halsey", 4.09)
-        self.song_2 = Song("Lose Yourself by Eminem", 5.20)
-        self.song_3 = Song("Bad Guy by Billie Eilish", 3.14)
+        self.song = Song("Colors by Halsey", 4.09, "pop")
+        self.song_1 = Song("Colors by Halsey", 4.09, "pop")
+        self.song_2 = Song("Lose Yourself by Eminem", 5.20, "rap")
+        self.song_3 = Song("Bad Guy by Billie Eilish", 3.14, "pop")
         self.guest = Guest("Troy Barnes", 30)
         self.guest_1 = Guest("Troy Barnes", 30)
         self.guest_2 = Guest("Abed Nadir", 31)
