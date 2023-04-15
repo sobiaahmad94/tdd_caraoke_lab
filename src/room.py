@@ -22,3 +22,7 @@ class Room:
             return True
         else:
             return False
+        
+room_1 = Room("Room A", 50)
+room_2 = Room("Room B", 75)
+room_3 = Room("Room C", 100)

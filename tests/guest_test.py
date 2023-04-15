@@ -2,12 +2,16 @@ import unittest
 
 from src.guest import Guest
 from src.song import *
+from src.room import *
 
 # from src.room import *
 
 class TestGuest(unittest.TestCase):
     def setUp(self):
         self.guest = Guest("Troy Barnes", 27)
+        self.room_1 = Room("Room A", 50)
+        self.room_2 = Room("Room B", 75)
+        self.room_3 = Room("Room C", 100)
 
     def test_guest_has_name(self):
         self.assertEqual("Troy Barnes", self.guest.guest_has_name())
@@ -16,7 +20,9 @@ class TestGuest(unittest.TestCase):
     def test_guest_has_age(self):
         self.assertEqual(27, self.guest.guest_has_age())
         # (expected, actual)
-
+    
+    def test_add_room(self):
+        self.assertEqual(1, self.guest.add_room(room_1))
 
 
     #     self.room = Room("Room A") 
